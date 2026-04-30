@@ -16,9 +16,9 @@ int readings[SAMPLES];   // Buffer to store the captured waveform data
 const int inputPin = A0; // Analog pin to read the signal from
 
 // --- Rotary Encoder Settings ---
-#define ENCODER_CLK 2 // Must be an interrupt pin (D2 or D3 on Pro Mini)
-#define ENCODER_DT 3
-#define ENCODER_SW 4 // Switch pin for Single Shot mode
+#define ENCODER_CLK 7 // Must be an interrupt pin (D2 or D3 on Pro Mini)
+#define ENCODER_DT 5
+#define ENCODER_SW 6 // Switch pin for Single Shot mode
 
 // --- Timebase and Single Shot Variables ---
 const int timebaseOptions[] = {0, 10, 25, 50, 100, 250, 500, 1000, 2500}; 
@@ -147,3 +147,4 @@ void loop() {
 
   } while (u8g2.nextPage());
 }
+
